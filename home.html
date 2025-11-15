@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Agu | Front-End Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Peter Agu</div>
+    <div class="nav-links">
+      <button class="nav-btn" data-target="#nav1">Home</button>
+      <button class="nav-btn" data-target="#nav2">About</button>
+      <button class="nav-btn" data-target="#nav3">Projects</button>
+      <button class="nav-btn" data-target="#nav4">Contact</button>
+    </div>
+    <div class="menu-btn"><i onclick="showSidebar()" class="fa-solid fa-bars"></i></div>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div class="navbar2">
+    <i onclick="hideSidebar()" class="fa-solid fa-x close-icon"></i>
+    <button class="nav-btn-2" data-target="#nav1">Home</button>
+    <button class="nav-btn-2" data-target="#nav2">About</button>
+    <button class="nav-btn-2" data-target="#nav3">Projects</button>
+    <button class="nav-btn-2" data-target="#nav4">Contact</button>
+  </div>
+
+  <!-- Home Section -->
+  <section class="nav-content active" id="nav1">
+    <div class="intro fade-in">
+      <h1>Hello, I’m <span>Peter Agu</span></h1>
+      <h2>Front-End Developer</h2>
+      <p>
+        I’m a passionate developer with a love for creating visually stunning and high-performing websites.
+        Turning ideas into experiences is my thing.
+      </p>
+      <a href="#nav3" class="btn-primary">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="nav-content" id="nav2">
+    <div class="about fade-in">
+      <h2>About Me</h2>
+      <div class="about-wrapper">
+        <img class="img-agu" src="images/5964.jpg" alt="Peter Agu">
+        <p>
+          
+        I’m Peter Agu, a dedicated IT professional and Front-End Developer with a passion for building seamless digital experiences and managing modern IT systems.
+
+        My journey began in an unexpected place — I studied Human Anatomy at the University of Benin, where I developed an analytical mindset and problem-solving skills that now shape how I approach technology. Over time, my curiosity for how systems work evolved into a full-fledged passion for information technology and software development.
+
+        Today, I work at Teknowledge as an IT System Administrator, where I oversee network operations, system performance, and cloud environments. I also have a strong foundation in Cloud Computing, backed by my Microsoft Azure Fundamentals Certification (AZ-900).
+
+        Beyond IT infrastructure, I’m a Front-End Developer skilled in React, JavaScript, HTML, and CSS, with an ever-growing interest in back-end development. I’m currently expanding my expertise in server-side technologies to become a well-rounded full-stack developer.
+
+        Whether it’s managing cloud systems or crafting responsive web interfaces, I thrive on learning, improving, and delivering technology that connects people and ideas.
+        </p>  
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="nav-content" id="nav3">
+    <div class="projects fade-in">
+      <h2>Projects</h2>
+      <div class="img-div">
+        <img class="img-project" src="images/benz-1.png" alt="Mercedes Project 1">
+        <img class="img-project" src="images/benz-2.png" alt="Mercedes Project 2">
+        <img class="img-project" src="images/amazon-1.png" alt="Amazon Project 1">
+        <img class="img-project" src="images/amazon-2.png" alt="Amazon Project 2">
+      </div>
+      <p>
+        A few of my favorite builds — responsive recreations of Mercedes Benz and Amazon websites.
+        See more of my work on GitHub 👇
+      </p>
+      <div class="icons">
+        <a href="https://github.com/peteragu"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/peter-agu-903855291/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="nav-content" id="nav4">
+    <div class="contact fade-in">
+      <h2>Contact Me</h2>
+      <p>I’m open to freelance, remote, and on-site roles. Let’s collaborate!</p>
+      <p class="email">
+        <a href="mailto:pedrojoachim300@gmail.com">pedrojoachim300@gmail.com</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/peter-agu-903855291/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/_Pedro_Ag"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://wa.me/09057366876"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="index.js"></script>
+</body>
+</html>
